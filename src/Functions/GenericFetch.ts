@@ -55,7 +55,7 @@ export abstract class GenericFetch<T> extends AbstractFetch<T> {
         const response = await fetch(`${this.baseUrl}/${id}`, {
             method: "DELETE",
         });
-        // console.log(response);
+        console.log(response);
         // if (!response.ok) {
         //     throw new Error(`Error al eliminar el elemento con ID ${id}`);
         // }
